@@ -12,11 +12,9 @@ jobs:
       uses: actions/checkout@v2
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         server: access888801288.webspace-data.io
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir: /clickandbuilds/deploy/
-        protocol: sftp
-        port: 22
