@@ -19,3 +19,4 @@ jobs:
         password: ${{ secrets.ftp_password }}
         localPath: '././'
         remotePath: '/clickandbuilds/deploy/'
+        exclude: 'README.md,.github/'
